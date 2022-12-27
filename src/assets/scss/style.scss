@@ -1,0 +1,57 @@
+@import "bootstrap/scss/functions";
+@import "./helpers/_variables";
+@import "bootstrap/scss/bootstrap";
+
+body {
+  color: $dark;
+  font-family: 'Baloo Tamma 2',"Noto Sans TC";
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 32px;
+}
+
+//button
+.btn {
+  color: $secondary;
+  font-weight: bold;
+
+  &:focus {
+    color: $secondary;
+  }
+}
+
+.btn-primary {
+  &:hover {
+    color: $white;
+    background: $red;
+    border-color: $red
+  }
+}
+
+.btn-outline-secondary {
+  &:hover {
+    color: $secondary;
+    background: $yellow;
+    border-color: $yellow;
+  }
+}
+
+//自定义样式
+.rounded-xl {
+  border-radius: $border-radius-lg*8;
+}
+
+//字体
+.fs-14{
+  font-size: 14px;
+}
+.fs-32{
+  font-size: 32px;
+}
